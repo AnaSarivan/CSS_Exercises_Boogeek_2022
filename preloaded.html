@@ -1,0 +1,89 @@
+<!--preloader
+
+VISUAL FEEDBACK
+    * box
+    * transform
+    * animation
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PURE css PRELOADER</title>
+    <style>
+      body {
+        background-color: #222;
+        color: white;
+      }
+      .preloader {
+        margin-top: 100px;
+        /*border: 1px solid red;*/
+      }
+      .preloader div {
+        width: 20px;
+        height: 20px;
+        background-color: orange;
+        margin: 5px;
+
+        float: left;
+
+        animation: jump 2s 10 alternate;
+      }
+
+      .preloader div:first-child {
+        animation: jump 2s 10 alternate;
+
+        /*animation-name: ;
+            animation-duration: ;
+            animation-iteration-count: ;
+            animation-direction: ;*/
+      }
+
+      .preloader div:nth-child(2) {
+        /*animation: jump 2s 6 alternate;*/
+        animation-delay: 0.3s;
+      }
+      .preloader div:nth-child(3) {
+        /* animation: jump 2s 6 alternate*/
+        animation-delay: 0.6s;
+      }
+      .preloader div:nth-child(4) {
+        /* animation: jump 2s 6 alternate*/
+        animation-delay: 0.9s;
+      }
+      .preloader div:nth-child(5) {
+        /*animation: jump 2s 6 alternate;*/
+        animation-delay: 1.2s;
+      }
+      /*
+        /* ANIMATION FRAMES  // ad-rule */
+      @keyframes jump {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-50px);
+        }
+      }
+
+      /*HW 1 .preloader height? .preload div height? */
+      /*HW 2 try to align horizontaly with display  */
+    </style>
+  </head>
+
+  <body>
+    <div class="preloader">
+      s
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>
